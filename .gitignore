@@ -41,5 +41,7 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+/lib/user.dart
 /lib/sign_up_page.dart
 
