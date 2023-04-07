@@ -12,17 +12,25 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "My First App",
       theme: ThemeData(
-        primarySwatch: Colors.green,
+        colorScheme:
+            const ColorScheme.light(primary: Color.fromARGB(255, 10, 54, 150)),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+            style: ButtonStyle(
+                shadowColor: const MaterialStatePropertyAll(
+                    Color.fromARGB(120, 120, 120, 120)),
+                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                    RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20.0))))),
         inputDecorationTheme: const InputDecorationTheme(
-            hintStyle: TextStyle(color: Colors.white),
-            focusedBorder: OutlineInputBorder(
+            hintStyle: TextStyle(color: Color.fromARGB(255, 50, 50, 50)),
+            focusedBorder: UnderlineInputBorder(
                 borderSide: BorderSide(
-              color: Colors.black,
+              color: Color.fromARGB(255, 10, 54, 150),
               width: 2.0,
             )),
-            enabledBorder: OutlineInputBorder(
-                borderSide: BorderSide(color: Colors.white))),
-        textTheme: Typography.whiteCupertino,
+            enabledBorder: UnderlineInputBorder(
+                borderSide:
+                    BorderSide(color: Color.fromARGB(255, 50, 50, 50)))),
       ),
       home: const LoginPage(),
     );
