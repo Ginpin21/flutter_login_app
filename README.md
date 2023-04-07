@@ -1,4 +1,7 @@
 # Flutter Login App
 
-Simple App that has a login screen using material widgets.
+Login Screen for ViewIt App
 
+## Packages installed
+
+- FontAwesome5 (For button Logos)
